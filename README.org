@@ -1,0 +1,45 @@
+* CI/CD Pipeline
+* Introduction
+  Continues Integration / Continues Delivery
+* SCM
+  Source Control Management
+** Git SCM
+*** Cloning
+*** Adding
+*** Commiting
+*** Pushing
+*** Branching
+*** Merging
+*** Pull Requests
+*** Tag : label a particular commit. 
+* Build Automation
+** Tasks
+*** Compiling
+*** Dependecy Management
+*** Executing Automated Tests
+*** Packaging the App for Deployment
+** Gradle
+   A build automation tool
+** Gradle Basics
+*** gradle build is defined in a groovy script, build.gradle, which is in the root dir.
+*** gradle init to initialize the project, and it also sets up the gradle wrapper.
+*** gradle build consist of tasks
+    ./gradlew some task
+*** build.gradle file controls the tasks are available.
+    task myTask {
+       print 'Hello World'
+    }
+*** tasks can be depends on one another. 
+*** dependecy relationship 
+    taskA.dependsOn taskB
+*** gradle has plugins, in build.gradle
+    plugins {
+      id "<plugin id>" version "<plugin version>"
+    }
+*** plugins are available http://plugins.gradle.org
+* Automated Testing
+  the automated execution of tests that verify the quality and stability of code
+** Types
+*** Unit Tests - focus on tesing small pieces of codes in isolation. Single method testing.
+*** Integration Tests - test larger portion of an application that are integrated with each other.
+*** Smoke Tests / Sanity Tests - high-level integration tests that verify basic, large-scale things like application functionality.
