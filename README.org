@@ -43,3 +43,30 @@
 *** Unit Tests - focus on tesing small pieces of codes in isolation. Single method testing.
 *** Integration Tests - test larger portion of an application that are integrated with each other.
 *** Smoke Tests / Sanity Tests - high-level integration tests that verify basic, large-scale things like application functionality.
+* Jenkins
+  Setup freestyle project
+* GitHooks
+  Webhooks are events notifications made from one application to another via http.
+** Create an access token in Github that has permission to read and create webhooks
+** Add a Github server in Jenkins for github.com
+** Create a Jenkins credentials with the token and configure the Github server configuration to use it
+** Check "Manage Hooks" for the Github server configuration
+** In the project configuration, under "Build Triggers," select "Github hook trigger for GITScm polling"
+* Jenkins Pipelines
+  A set of Jenkins plugins that support doing continous delivery in Jenkins.
+** Jenkinsfile should be added to the source control repo
+** The Jenkins project type should be "Pipeline" or "Multibranch Pipeline"
+** Pipelines has a domain-specific-language (DSL)
+** There are two pipelines
+*** Scripted - procedural code
+*** Declarative - syntax
+** Pipeline task examples
+*** Execute a command
+*** Copy files to a server
+*** Restart a service
+*** Wait for input from a human
+* Continous Delivery
+  Ensure that you are always able to deploy any version of your code.
+* Automated Deployment in a Pipeline
+** Define Stages of CD process
+** Steps that perform the tasks necessary to carry out the deployment
