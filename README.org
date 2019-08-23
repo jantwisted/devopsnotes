@@ -70,3 +70,11 @@
 * Automated Deployment in a Pipeline
 ** Define Stages of CD process
 ** Steps that perform the tasks necessary to carry out the deployment
+* Grafana / Prometheus
+** Use Helm to install Grafana and Prometheus
+** helm init --wait
+** 
+* Autoscaling
+* Canary Testing
+  Unit tests, integration tests and even manual tests run in a staging environment can work together to provide a robust solution.
+  Canary test comes to test in real-world usage of the code.
