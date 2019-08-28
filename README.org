@@ -78,3 +78,5 @@
 * Canary Testing
   Unit tests, integration tests and even manual tests run in a staging environment can work together to provide a robust solution.
   Canary test comes to test in real-world usage of the code.
+* Fully automated CI/CD
+** 
